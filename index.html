@@ -50,20 +50,32 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
         </nav>
-        <div class="panel panel-default">
+        <!--First (*Far LEFT*) Column-->
+        <div class="panel panel-default" id="leftColumn">
             <div class="panel-heading">Compose a Tweet</div>
-            <div class="panel-body">
-                put a box here yo!
-            </div>
-            </div>
-              
-            <div class="panel panel-default">
+                <div class="panel-body">
+                    put a box here yo!
+                </div>
+        </div>
+         <!--Second (*Far RIGHT*) Column-->     
+        <div class="panel panel-default" id="rightColumn">
             <div class="panel-heading">
                 <h3 class="panel-title">Your Tweet Activity</h3>
             </div>
             <div class="panel-body">
                 You've Tweeted once. Don't be too proud of yourself.
             </div>
+            
+        </div>
+        <!--Third (*MIDDLE*) column-->
+        <div class="panel panel-default" id="centerColumn">
+            <div class="panel-heading">
+                <h3 class="panel-title">Your Tweet Activity</h3>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            
         </div>
         <!--latest compiled Javascript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
