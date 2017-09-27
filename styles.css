@@ -8,5 +8,9 @@
 }
 #centerColumn {
     float: right;
-    margin: 2%;
+    margin-right: 10%;
+}
+#myimage {
+    float: left;
+    margin-left: 20%;
 }
