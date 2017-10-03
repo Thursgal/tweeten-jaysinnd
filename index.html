@@ -95,8 +95,8 @@
                         <hr>
                         <h3><b>Jason Dean</b></h3>
                         <p>Wow, this class is okay! #otc #webDev2</p>
-                        <i class="glyphicon glyphicon-heart increment"></i>5
-                        <i class="glyphicon glyphicon-refresh increment"></i>9001
+                        <i class="glyphicon glyphicon-heart increment"></i><span id="test">5</span>
+                        <i class="glyphicon glyphicon-refresh increment"></i><span id="test">9001</span>
                     </div>
                 </div>
 
@@ -104,8 +104,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
             $(".increment").click(function() {
-                console.log($(this).next());
-            });
+                $(this).next().text(parseInt($("#test").text()) + 1);
+            })
         </script>
         <!--<script src="like.js"></script>-->
     </body>
